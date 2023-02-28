@@ -1,0 +1,39 @@
+
+CIT results capture format.
+
+
+Akshat Anand
+Give me a format to capture results for CIT for software developers
+
+Sure, here's a format you can use to capture results for CIT (Continuous Integration and Testing) for software developers:
+
+Project: [Project Name]
+
+Build #: [Build Number]
+
+Commit: [Commit ID or description]
+
+Branch: [Branch Name]
+
+Date: [Date]
+
+Time: [Time]
+
+Environment: [Environment Name]
+
+Test Results:
+
+[Test Suite Name]: [Number of Tests Run], [Number of Tests Passed], [Number of Tests Failed], [Number of Tests Skipped], [Duration of Test Suite]
+[Test Suite Name]: [Number of Tests Run], [Number of Tests Passed], [Number of Tests Failed], [Number of Tests Skipped], [Duration of Test Suite]
+[Test Suite Name]: [Number of Tests Run], [Number of Tests Passed], [Number of Tests Failed], [Number of Tests Skipped], [Duration of Test Suite]
+Code Coverage Results:
+
+[Module Name]: [Coverage Percentage]
+Build and Deployment Results:
+
+Build Status: [Success/Failure], [Build Time], [Build Log URL]
+Deployment Status: [Success/Failure], [Deployment Time], [Deployment Log URL]
+Issues and Bugs:
+
+[Issue/Bug ID]: [Description], [Severity], [Status], [Link to Issue/Bug Tracker]
+Comments and Observations:
