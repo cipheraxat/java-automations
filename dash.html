@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display JavaScript Code with Syntax Highlighting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" integrity="sha512-dy1jHXq/YcTb7VUeT6Ual7VUzP6fD7RzM0WhmbO/TJaxuknvLpRUEaJnKWDX+mdxdCrX3q3EmJfCxAg+91nlGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>JavaScript Code with Syntax Highlighting</h1>
+    <pre><code class="language-javascript" id="js-code"></code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-jox/uE/ZJzvF+L7p/gbI+JDdmMg99JvKj+2I9H9+0r8TbT+fTnp1tjh9BtW7Y+75v1tq3wqM0QJzknZ8CGvQ2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'path/to/your/javascript/file.js', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const code = xhr.responseText;
+                document.getElementById('js-code').innerHTML = code;
+                Prism.highlightAll();
+            }
+        };
+        xhr.send();
+    </script>
+</body>
+</html>
